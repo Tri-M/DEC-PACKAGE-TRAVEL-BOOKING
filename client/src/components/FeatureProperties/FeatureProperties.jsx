@@ -58,4 +58,11 @@ const FeaturedProperties = () => {
         <span className="fpPrice">Starting from $105</span>
         <div className="fpRating">
           <button>8.9</button>
-          <s
+          <span>Excellent</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FeaturedProperties;
