@@ -27,7 +27,7 @@ function Login() {
     signInWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        
+
         navigate("/");
       })
       .catch((err) => {
@@ -49,11 +49,13 @@ function Login() {
         />
         <InputControl
           label="Password"
+          type="password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
           placeholder="Enter Password"
         />
+
 
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>

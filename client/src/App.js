@@ -9,6 +9,9 @@ import List from "./pages/List/List";
 import Hotel from "./pages/hotel/Hotel";
 import Login from './components/firebase-auth/src/components/Login/Login';
 import Signup from './components/firebase-auth/src/components/Signup/Signup';
+// import IndexPage from './components/gatsby-hotel/src/pages';
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
          <Route path="/hotels/:id" element={<Hotel/>}/>
+         {/* <Route path="/marinatown" element={<IndexPage/>}/> */}
        </Routes>
     </BrowserRouter>
   )
